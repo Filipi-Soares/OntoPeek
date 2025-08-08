@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ontology Visualizer</title>
+  <script src="https://unpkg.com/n3/browser/n3.min.js"></script>
+  <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+  <style>
+    body { font-family: sans-serif; margin: 20px; }
+    #network { height: 600px; border: 1px solid #ccc; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <h1>GitHub Ontology Visualizer</h1>
+  <input id="urlInput" type="text" placeholder="Enter raw GitHub URL to .ttl/.rdf/.owl file" size="80" />
+  <button onclick="loadOntology()">Visualize</button>
+  <div id="network"></div>
+  <script src="script.js"></script>
+</body>
+</html>
